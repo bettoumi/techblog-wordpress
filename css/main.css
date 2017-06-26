@@ -1,0 +1,720 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+                   Start my  CSS
+   ========================================================================== */
+
+   body
+   {
+     background-color:#001011; 
+   }
+   
+
+
+
+         /*=================== header css=========================*/
+ 
+
+
+
+  #entete
+  {
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #001011;
+    color: white;
+    padding-left: 20px;
+    text-align: center;
+  }
+  #entete .logoblog
+  {
+    margin: auto;
+  }
+   #entete .logoblog .logo
+   {
+     font-family: 'Press Start 2P', cursive;
+     font-size: 3em;
+   }
+            /* style nav for mobile*/
+
+   .menumobile
+   {
+     margin: auto;
+     text-align: center;
+   
+   }
+
+   .menumobile .menudrop
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        padding-bottom: 50px;
+        display:none;
+       
+
+    }
+    .menumobile .menudrop li
+    {
+        margin-bottom: 10px;
+    }
+    .menumobile .menudrop li a
+    {
+        text-decoration: none;
+        padding-bottom: 10px;
+        color: white;
+        font-size: 19px;
+        font-family: 'Jura', sans-serif;
+        transition: all 2s ;
+        font-weight: bold;
+        background: url('../img/trait-gris-degrade.png') no-repeat;
+        background-size:contain;
+        background-position: bottom;
+
+    }
+    .menumobile .menudrop li a:hover
+    {
+       color: #686868; 
+     }   
+    .menubouton
+    {
+        color:#001011;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        font-family: 'Jura', sans-serif;
+        font-size: 23px;
+        margin-bottom: 30px;
+        margin-top:30px;
+        margin-left: 20px;
+    }
+    .menubouton:hover
+    {
+
+    }
+
+    
+     /*=================== style les articles section =========================*/
+
+  .lesarticles
+  {
+    margin-left: 10px;
+  }
+  .articles, .le-plus-lit, .labelform, .tab-content, .lecontenu 
+  {
+    font-family: 'Jura', sans-serif;
+  }
+
+  .articles 
+  {
+     background-color:#001011;
+     /*color: green;*/
+
+
+  }
+ .articles .articlecont h2
+  {
+    font-size: 25px;
+    color:#ffa552;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+
+   }
+    .lesarticles .articles .articlecont
+    {
+        width: 95%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .lesarticles .articles .articlecont .card , .le-plus-lit
+    {
+       background-color:#001011; 
+    }
+
+   .lesarticles .articles .articlecont .card
+   {
+     
+     background-color:#001011;
+     border:none; 
+     color:white;
+     padding-top: 50px;
+
+   }
+  .lesarticles .articles .articlecont .card .card-img-top
+  {
+     height: 300px;
+     width: 450px;
+  }
+
+
+   .date-comment,  .partage
+   {
+     display: flex;
+     justify-content: space-around;
+   
+   }
+
+  .date-comment
+   {
+       font-size: 18px;
+
+    } 
+    .partage .btn,.learn 
+    {
+      color:rgb(255,165,82); 
+      letter-spacing: 0.14em; 
+    }
+
+   .partage .btn, .contact .formulaire .btn
+   {
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: all 0.6s ease-in;
+   }
+   .partage .btn:hover 
+   {
+     background-color:  #c4d6b0;
+   }
+   .partage .btn:hover,.nav-link:hover  
+   {
+     color: #001011;
+   }
+   .icone
+   {
+    font-size: 20px;
+   }
+   .learn
+   {
+    text-decoration: none; 
+    transition: all 0.5s ease-out;
+    margin: 0 30%;
+   }
+   .learn:hover
+   {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+   }
+   .learn:hover  .icone
+  {
+    font-size:20px;
+  }
+
+     /*=================== style Aside =========================*/
+       
+
+   .le-plus-lit 
+   {
+     color: white;
+     box-shadow: 0 4px 10px 0 rgba(255,165,82,0.2),0 4px 20px 0 rgba(255,165,82,0.19);
+     padding-left: 20px;
+     padding-right: 10px;
+     padding-top: 30px;
+
+   } 
+ .aside-article
+ {
+    margin-bottom: 20px;
+ }       
+  .img-apropos
+  {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px 25px 30px 0;
+  }
+  .titre-aside
+  {
+    background: url('../img/trait-gris-degrade.png') no-repeat;
+    background-size:contain;
+    text-align: center;
+   padding-bottom: 10px;
+   background-position: bottom;
+  }
+  .texte-aside
+  {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .texte-aside .btn, .contact .formulaire .btn, .nav-link, .natab .btn
+  {
+    background-color: rgb(255,165,82);
+    font-weight: bold;
+    font-family: 'Jura', sans-serif;
+    letter-spacing: 0.20em;
+
+  }
+  .blog-list
+  {
+    word-spacing: 0.5em;
+    letter-spacing: 0.15em;
+  }
+  .blog-list li a
+  {
+      text-decoration: none;
+      color: white;
+
+  }
+  .afficdate
+
+  {
+    font-size: 15px;
+    letter-spacing: 0.5em;
+  }
+  #tp
+  {
+    font-size: 18px;
+
+  }
+
+    /*=================== style contact =========================*/
+  .contact
+  {
+   
+    padding-top: 50px;
+  }  
+  .contact .formulaire
+  {
+    width: 85%;
+     margin: auto;
+  }
+  .labelform
+  {
+    color: white;
+     
+  }
+
+
+    /*=================== style tabs =========================*/
+  .tabs
+ {
+    width: 85%;
+    margin: auto;
+    padding-top: 50px; 
+ }
+.lecontenu
+{
+   padding: 20px;
+   color: white; 
+}
+ .tabcontenu 
+ {
+    margin-bottom: 20px;
+    display: none;
+ }
+ #reston
+ {
+    color: #324a5f;
+ }
+ #tech
+ {
+   color: #683257;
+ }
+ 
+ .active
+ {
+    display: block;
+ }
+
+
+
+   /*=================== style footer =========================*/
+
+   footer
+   {
+    margin-top: 50px;
+   }
+   footer .reseau .reseau-footer
+   {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 20px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+   }
+    footer .reseau .reseau-footer li a
+    {
+        text-decoration: none;
+        color: white;
+    }
+
+  footer .texte-footer
+  {
+    color: white;
+    font-size: 13px;
+  }  
+
+  footer .haut-page
+  {
+   
+    width: 20%;
+    text-align: center;
+  }
+   footer .haut-page .haut 
+  {
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 15px; 
+
+  }
+ 
+    /*=================== style for tartup page =========================*/
+   #sartupart
+   {
+    width: 100%;
+   }
+  
+  .img-fluid
+  {
+    margin: 0 auto;
+  }
+
+
+  /* ==========================================================================
+                      CSS FOR TABLET
+   ========================================================================== */
+  
+@media (min-width: 720px)
+{
+
+  .menulaptop
+{
+   margin: auto;
+
+}
+
+ .menulaptop #menulap
+
+ {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items:center;
+    
+ }
+
+ .menulaptop #menulap li
+ {
+    background: url('../img/trait-gris-degrade.png') no-repeat;
+    background-size:contain;
+    background-position: bottom;
+    padding: 10px 20px;
+ }
+ .menulaptop #menulap #dernierlist
+ {
+    border-right: transparent;
+ }
+ .menulaptop #menulap li a
+ {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Jura', sans-serif;
+    transition: all 0.5s;
+    letter-spacing: 1.2px;
+    
+ }
+ .menulaptop #menulap li a:hover
+ {
+   color: #686868;
+ }
+
+
+
+.lesarticles .articles .articlecont .card .card-img-top
+  {
+     width: 600px;
+  }
+
+
+}
+
+                      
+                      
+ /* ==========================================================================
+                      CSS FOR DESKTOP
+   ========================================================================== */
+ @media (min-width: 1200px)
+{
+   #entete .logoblog .logo
+   {
+     
+     font-size: 7em;
+
+   }
+
+} 
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
