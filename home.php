@@ -54,17 +54,18 @@
         <section class="articlecont" id="ntech">
             <h2><span class="ion-ios-grid-view-outline"></span>Nouvelles technologies</h2>
            <div class="row">
-       
-            <article class="card post col-12 col-md-6">
+            
+              <?php while(have_posts()) : the_post();?>
+            <article class="card col-12 col-md-6">
               <div class="entet-card">
                   
                   <img class="card-img-top img-fluid" src="<?php echo esc_url (get_template_directory_uri() );?>/img/starup.jpg" alt="start-up-deviolet" onmouseover="affichalt(this)" onmouseout="cacheralt(this)">
                  
                </div>    
               <div class="card-block">
-                <h4 class="card-title" <?php the_title(); ?> >Start-Up-Deviolet</h4>
-                <p class="card-text" <?php the_content(); ?> >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, saepe optio deleniti quisquam earum ducimus numquam, culpa exercitationem, debitis blanditiis veniam odit vitae laudantium, quasi nam modi! Libero, tempore, quibusdam.</p>
-                <p class="date" <?php the_date();?> > <span class="ion-ios-clock-outline"> </span><span class="affichdate"></span></p>
+                <h4 class="card-title"> <?php the_title(); ?> </h4>
+                <p class="card-text" <?php the_content(); ?></p>
+                <p class="date" <?php the_time("j M Y");?> > <span class="ion-ios-clock-outline"> </span><span class="affichdate"></span></p>
                      <!-- date et comment part -->
                 <div class="date-comment">
                    
@@ -80,160 +81,10 @@
                 </div> 
                <a href="tartup.html" <?php the_permalink();  ?> class="learn">Learn More <span class="ion-android-arrow-dropright-circle icone"></span></a>
               </div> 
-
             </article>
+               <?php endwhile; ?>
        
-                   <!-- end first article -->
-
-            <article class="card col-12 col-md-6">
-              <div class="entet-card">
-                  <img class="card-img-top img-fluid" src="<?php echo esc_url (get_template_directory_uri() );?>/img/impression3d.jpg"  alt="start-up-deviolet" onmouseover="affichalt(this)" onmouseout="cacheralt(this)">
-                 
-               </div>    
-              <div class="card-block">
-                <h4 class="card-title">Start-Up-Deviolet</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, saepe optio deleniti quisquam earum ducimus numquam, culpa exercitationem, debitis blanditiis veniam odit vitae laudantium, quasi nam modi! Libero, tempore, quibusdam.</p>
-                <p class="date"> <span class="ion-ios-clock-outline"> </span><span class="affichdate"></span></p>
-                     <!-- date et comment part -->
-                <div class="date-comment">
-                   
-                   <p><span class="ion-ios-personadd"></span></p>
-                   <p class="comment"><span class="ion-android-chat icone"></span><span class="acout-comment"></span></p>
-                </div>
-                     <!-- button part -->
-                <div class="partage">
-                  <a href="#" class="btn"><span class="ion-social-facebook-outline icone"></span> Share</a>
-
-                  <a href="#" class="btn"><span class="ion-social-twitter-outline icone "> </span> Tweet</a>
-                  <a href="#" class="btn"><span class="ion-social-googleplus-outline icone"> </span> Share</a>
-                </div> 
-               <a href="#" class="learn">Learn More <span class="ion-android-arrow-dropright-circle icone"></span></a>
-              </div> 
-
-            </article>
-          </div>    
-               <!-- end of second articles -->
-         </section>
-                  <!-- end of first section of article -->
-
-         <section class="articlecont" id="innov"> 
-            <h2><span class="ion-ios-grid-view-outline"></span>Innovations/web</h2>
-           <div class="row">  
-            <article class="card col-12 col-md-6">
-              <div class="entet-card">
-
-                  <img class="card-img-top img-fluid" src="<?php echo esc_url (get_template_directory_uri() );?>/img/besttechnologie.jpg" alt="start-up-deviolet" onmouseover="affichalt(this)" onmouseout="cacheralt(this)">
-                
-               </div>    
-              <div class="card-block">
-                <h4 class="card-title">Start-Up-Deviolet</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, saepe optio deleniti quisquam earum ducimus numquam, culpa exercitationem, debitis blanditiis veniam odit vitae laudantium, quasi nam modi! Libero, tempore, quibusdam.</p>
-                <p class="date"> <span class="ion-ios-clock-outline"> </span><span class="affichdate"></span></p>
-                     <!-- date et comment part -->
-                <div class="date-comment">
-                   
-                   <p><span class="ion-ios-personadd"></span></p>
-                   <p class="comment"><span class="ion-android-chat icone"></span><span class="acout-comment"></span></p>
-                </div>
-                     <!-- button part -->
-                <div class="partage">
-                  <a href="#" class="btn"><span class="ion-social-facebook-outline icone"></span> Share</a>
-
-                  <a href="#" class="btn"><span class="ion-social-twitter-outline icone "> </span> Tweet</a>
-                  <a href="#" class="btn"><span class="ion-social-googleplus-outline icone"> </span> Share</a>
-                </div> 
-               <a href="#" class="learn">Learn More <span class="ion-android-arrow-dropright-circle icone"></span></a>
-              </div> 
-
-            </article>
-
-          <article class="card col-12 col-md-6">
-              <div class="entet-card">
-                  <img class="card-img-top img-fluid" src="<?php echo esc_url (get_template_directory_uri() );?>/img/innovatsuisse.jpg"  alt="innov-suisse" onmouseover="affichalt(this)" onmouseout="cacheralt(this)">
-                 
-               </div>    
-              <div class="card-block">
-                <h4 class="card-title">Start-Up-Deviolet</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, saepe optio deleniti quisquam earum ducimus numquam, culpa exercitationem, debitis blanditiis veniam odit vitae laudantium, quasi nam modi! Libero, tempore, quibusdam.</p>
-                <p class="date"> <span class="ion-ios-clock-outline"> </span><span class="affichdate"></span></p>
-                     <!-- date et comment part -->
-                <div class="date-comment">
-                   
-                   <p><span class="ion-ios-personadd"></span></p>
-                   <p class="comment"><span class="ion-android-chat icone"></span><span class="acout-comment"></span></p>
-                </div>
-                     <!-- button part -->
-                <div class="partage">
-                  <a href="#" class="btn"><span class="ion-social-facebook-outline icone"></span> Share</a>
-
-                  <a href="#" class="btn"><span class="ion-social-twitter-outline icone "> </span> Tweet</a>
-                  <a href="#" class="btn"><span class="ion-social-googleplus-outline icone"> </span> Share</a>
-                </div> 
-               <a href="#" class="learn">Learn More <span class="ion-android-arrow-dropright-circle icone"></span></a>
-              </div> 
-
-            </article>
-            </div>
-               <!-- end of article -->
-         </section> 
-                <!-- end of scond section -->
-
-            <section class="articlecont" id="outAst"> 
-            <h2><span class="ion-ios-grid-view-outline"></span>Outils&Astuces</h2>
-           <div class="row">  
-            <article class="card col-12 col-md-6">
-              <div class="entet-card">
-                  <img class="card-img-top img-fluid" src="<?php echo esc_url (get_template_directory_uri() );?>/img/outils_amel.jpg"  alt="best-technologie" onmouseover="affichalt(this)" onmouseout="cacheralt(this)">
-                
-               </div>    
-              <div class="card-block">
-                <h4 class="card-title">Améliorer/vitesse du site</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, saepe optio deleniti quisquam earum ducimus numquam, culpa exercitationem, debitis blanditiis veniam odit vitae laudantium, quasi nam modi! Libero, tempore, quibusdam.</p>
-                <p class="date"> <span class="ion-ios-clock-outline"> </span><span class="affichdate"></span></p>
-                     <!-- date et comment part -->
-                <div class="date-comment">
-                   
-                   <p><span class="ion-ios-personadd"></span></p>
-                   <p class="comment"><span class="ion-android-chat icone"></span><span class="acout-comment"></span></p>
-                </div>
-                     <!-- button part -->
-                <div class="partage">
-                  <a href="#" class="btn"><span class="ion-social-facebook-outline icon"></span> Share</a>
-
-                  <a href="#" class="btn"><span class="ion-social-twitter-outline icone "> </span> Tweet</a>
-                  <a href="#" class="btn"><span class="ion-social-googleplus-outline icone"> </span> Share</a>
-                </div> 
-               <a href="#" class="learn">Learn More <span class="ion-android-arrow-dropright-circle icone"></span></a>
-              </div> 
-
-            </article>
-
-          <article class="card col-12 col-md-6">
-              <div class="entet-card">
-                  <img class=" test card-img-top img-fluid" src="<?php echo esc_url (get_template_directory_uri() );?>/img/MonTimbrenLigne.jpg"  alt="innov-suisse" onmouseover="affichalt(this)" onmouseout="cacheralt(this)">
-                 
-               </div>    
-              <div class="card-block">
-                <h4 class="card-title">MonTimbrenLigne</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, saepe optio deleniti quisquam earum ducimus numquam, culpa exercitationem, debitis blanditiis veniam odit vitae laudantium, quasi nam modi! Libero, tempore, quibusdam.</p>
-                <p class="date"> <span class="ion-ios-clock-outline"> </span><span class="affichdate"></span></p>
-                     <!-- date et comment part -->
-                <div class="date-comment">
-                   
-                   <p><span class="ion-ios-personadd"></span></p>
-                   <p class="comment"><span class="ion-android-chat icone"></span><span class="acout-comment"></span></p>
-                </div>
-                     <!-- button part -->
-                <div class="partage">
-                  <a href="#" class="btn"><span class="ion-social-facebook-outline icone"></span> Share</a>
-
-                  <a href="#" class="btn"><span class="ion-social-twitter-outline icone "> </span> Tweet</a>
-                  <a href="#" class="btn"><span class="ion-social-googleplus-outline icone"> </span> Share</a>
-                </div> 
-               <a href="#" class="learn">Learn More <span class="ion-android-arrow-dropright-circle icone"></span></a>
-              </div> 
-
-            </article>
+                  
             </div>
                <!-- end of article -->
          </section> 
